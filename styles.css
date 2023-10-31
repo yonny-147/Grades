@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Edu TAS Beginner;
+}
+.sectionIndex{
+    background: linear-gradient(90deg, #ff00d7 50%, #0027ff 55%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tittle{
+    text-transform: uppercase;
+    margin: 40px;
+    color: #f7f8f8;
+    text-shadow: 1px 4px 4px #0027ff;
+}
+span{
+    text-shadow: 1px 4px 4px #ff00d7;
+}
+label{
+    color: #f7f8f8;
+    text-shadow: 1px 2px 2px #25292c;
+    font-size: 24px;
+}
+select{
+    margin: 10px;
+    padding: 4px;
+    width: 80%;
+    border: 2px solid #f7f8f8;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #fff;
+    color: #25292c;
+    font-family: Edu TAS Beginner;
+}
+select:focus{
+    outline: none;
+}
+select option {
+    font-family: Edu TAS Beginner;
+    cursor: pointer;
+}
+select option:hover {
+    background-color: #25292c;
+    color: #f7f8f8;
+}
+.gen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*femenino*/
+.textTask{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    justify-content: flex-start;
+}
+.sectionWelcome{
+    width: 20%;
+    height: auto;
+    display: flex;
+    background: radial-gradient(circle, #b21e4b 0%, #f7aab9 100%);
+    align-items: center;
+}
+.myTask{
+    width: 100%;
+    font-size: 45px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 1px 2px 2px #b21e4b;
+}
+.sectionTask{
+    width: 80%;
+    height: auto;
+    padding: 20px 0;
+    background: radial-gradient(circle, #ffffff 0%, #fbd0d9 100%);
+}
+.taskText{
+    width: 50%;
+    padding: 10px;
+    font-family: Edu TAS Beginner;
+    font-size: 20px;
+    border: 2px solid #951c45;
+    background-color: transparent;
+    font-weight: 700;
+    color: #951c45;
+}
+.taskText:focus{
+    outline: none; 
+}
+.taskText::placeholder{
+    color: #951c45;
+}
+.getInto{
+    border: none;
+    background-color: #eeeff0;
+    cursor: pointer;
+    color: #25292c;
+    font-size: 20px;
+    padding: 10px;
+    font-family: Edu TAS Beginner;
+    cursor: pointer;
+}
+.getInto:hover{
+    background-color: #25292c;
+    color: #eeeff0;
+}
+.btnFem{
+    border: none;
+    background-color: #470a1f;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px;
+    font-family: Edu TAS Beginner;
+}
+.btnFem:hover{
+    border: none;
+    background: #f27a93;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px;
+}
+.list{
+    padding: 40px 80px;
+    text-align: start;
+}
+/*Masculino*/
+.textTaskMasc{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    justify-content: flex-start;
+}
+.sectionWelcomeMasc{
+    width: 20%;
+    height: auto;
+    display: flex;
+    background: radial-gradient(circle, #0027ff 0%, #b3d7ff 100%);
+    align-items: center;
+}
+.myTaskMasc{
+    width: 100%;
+    font-size: 45px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 1px 2px 2px #0a185c;
+}
+.sectionTaskMasc{
+    width: 80%;
+    height: auto;
+    padding: 20px 0;
+    background: radial-gradient(circle, rgba(86,144,255,1) 0%, rgba(232,244,255,1) 100%);
+}
+.taskTextMasc{
+    width: 50%;
+    padding: 10px;
+    font-family: Edu TAS Beginner;
+    font-size: 20px;
+    border: 2px solid #0027ff;
+    background-color: transparent;
+    font-weight: 700;
+    color: #0027ff;
+}
+.taskTextMasc:focus{
+    outline: none; 
+}
+.taskTextMasc::placeholder{
+    color: #0027ff;
+}
+
+.btnMasc{
+    border: none;
+    background-color: #0027ff;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px;
+    font-family: Edu TAS Beginner;
+}
+.btnMasc:hover{
+    border: none;
+    background: #5690ff;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 10px;
+}
+li{
+    border-bottom: 2px solid #505050;
+    padding: 10px 0;
+    color: #505050;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    width: 20px;
+    cursor: pointer;
+    filter: invert(0%) sepia(49%) saturate(1158%) hue-rotate(204deg) brightness(98%) contrast(95%);
+}
+img:hover{
+    filter: invert(24%) sepia(63%) saturate(7415%) hue-rotate(354deg) brightness(109%) contrast(129%);
+}
+.volver{
+    width: 80px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Edu TAS Beginner;
+}
+.volver:hover{
+    color: #ccc;
+    background: #505050;
+
+}
