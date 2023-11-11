@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.textTask{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    justify-content: flex-start;
+}
+.sectionWelcome{
+    width: 20%;
+    height: auto;
+    display: flex;
+    background: radial-gradient(circle, #b21e4b 0%, #f7aab9 100%);
+    align-items: center;
+}
+.myTask{
+    width: 100%;
+    font-size: 45px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 1px 2px 2px #b21e4b;
+}
+.sectionTask{
+    width: 80%;
+    height: auto;
+    padding: 20px 0;
+    background: radial-gradient(circle, #ffffff 0%, #fbd0d9 100%);
+}
+.taskText{
+    width: 50%;
+    padding: 10px;
+    font-family: Edu TAS Beginner;
+    font-size: 20px;
+    border: 2px solid #951c45;
+    background-color: transparent;
+    font-weight: 700;
+    color: #951c45;
+}
+.taskText:focus{
+    outline: none; 
+}
+.taskText::placeholder{
+    color: #951c45;
+}
+
+.volver{
+    width: 80px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.btnFem{
+    border: none;
+    background-color: #470a1f;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px;
+    font-family: Edu TAS Beginner;
+}
+
+.btnFem:hover{
+    background-color: #951c45;
+}
+
+.list{
+    padding: 40px 80px;
+    text-align: start;
+}
+li{
+    border-bottom: 2px solid #951c45;
+    padding: 10px 0;
+    color: #470a1f;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    width: 20px;
+    cursor: pointer;
+    filter: invert(7%) sepia(52%) saturate(4248%) hue-rotate(342deg) brightness(93%) contrast(102%);
+}
+img:hover{
+    filter: invert(0%) sepia(100%) saturate(20%) hue-rotate(190deg) brightness(92%) contrast(102%);
+}
+
+@media(max-width: 750px){
+    .textTask{
+        display: block;
+    }
+    .sectionTask{
+        width: 100%;
+        height: 100vh;
+    }
+    .sectionWelcome{
+        width: 100%;
+    }
+    .volver{
+        top: 5px;
+    }
+}
+@media(max-width: 430px){
+    .myTask{
+        height: 50px;
+        align-items: center;
+        line-height: 2;
+    }
+    .taskText{
+        font-size: 15px;
+    }
+    .myTask{
+        font-size: 30px;
+    }
+    .btnFem{
+        font-size: 15px;
+        padding: 12px;
+    }
+}

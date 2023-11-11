@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="img/notas.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesFem.css">
     <script defer rel="JavaScript" src="pruebas.js"></script>
     <title>Notas</title>
   </head>
@@ -18,12 +18,12 @@
     <div class="sectionTask">
       <div class="inBut">
         <input type="text" id="task" class="taskText" placeholder="Ingrese la tarea">
-        <button id="add" class="btnFem">Agregar</button>
+        <button class="btnFem" onclick="addTask()">Agregar</button>
       </div>
       <ul class="list">
       </ul>
     </div>
   </div>
-<button class="volver" onclick="volverAlInicio()">Volver</button>
+<button class="volver btnFem" onclick="volverAlInicio()">Volver</button>
 </body>
 </html>

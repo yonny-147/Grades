@@ -1,17 +1,15 @@
 const text = document.querySelector('#task'),
-btn = document.querySelector('#add'),
 lista = document.querySelector('.list')
 
 const listado = [];
 
-btn.addEventListener('click', () => {
-    console.log(text.value)
+function addTask(){
     if (text.value.trim() !== "") { // Asegurarse de que el valor no esté vacío
         listado.push(text.value)
         actualizarLista()
         text.value = "" // Limpiar el input
     }
-})
+}
 
 // Función para actualizar la lista en el documento
 function actualizarLista() {

@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.textTaskMasc{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    justify-content: flex-start;
+}
+.sectionWelcomeMasc{
+    width: 20%;
+    height: auto;
+    display: flex;
+    background: radial-gradient(circle, #0027ff 0%, #b3d7ff 100%);
+    align-items: center;
+}
+.myTaskMasc{
+    width: 100%;
+    font-size: 45px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 1px 2px 2px #0a185c;
+}
+.sectionTaskMasc{
+    width: 80%;
+    height: auto;
+    padding: 20px 0;
+    background: radial-gradient(circle, rgba(86,144,255,1) 0%, rgba(232,244,255,1) 100%);
+}
+.taskTextMasc{
+    width: 50%;
+    padding: 10px;
+    font-family: Edu TAS Beginner;
+    font-size: 20px;
+    border: 2px solid #0027ff;
+    background-color: transparent;
+    font-weight: 700;
+    color: #0027ff;
+}
+
+.taskTextMasc:focus{
+    outline: none; 
+}
+
+.taskTextMasc::placeholder{
+    color: #0027ff;
+}
+
+.btnMasc{
+    border: none;
+    background-color: #0027ff;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px;
+    font-family: Edu TAS Beginner;
+}
+
+.btnMasc:hover{
+    border: none;
+    background: #5690ff;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.volver{
+    width: 80px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.list{
+    padding: 40px 80px;
+    text-align: start;
+}
+li{
+    border-bottom: 2px solid #5690ff;
+    padding: 10px 0;
+    color: #0027ff;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    width: 20px;
+    cursor: pointer;
+    filter: invert(10%) sepia(100%) saturate(6953%) hue-rotate(240deg) brightness(98%) contrast(119%);
+}
+img:hover{
+    filter: invert(0%) sepia(100%) saturate(20%) hue-rotate(190deg) brightness(92%) contrast(102%);
+}
+
+@media(max-width: 750px){
+    .textTaskMasc{
+        display: block;
+    }
+    .sectionTaskMasc{
+        width: 100%;
+        height: 100vh;
+    }
+    .sectionWelcomeMasc{
+        width: 100%;
+    }
+    .volver{
+        top: 5px;
+    }
+}
+@media(max-width: 430px){
+    .myTaskMasc{
+        height: 50px;
+        align-items: center;
+        line-height: 2;
+    }
+    .taskTextMasc{
+        font-size: 15px;
+    }
+    .myTaskMasc{
+        font-size: 30px;
+    }
+    .btnMasc{
+        font-size: 15px;
+        padding: 12px;
+    }
+}
